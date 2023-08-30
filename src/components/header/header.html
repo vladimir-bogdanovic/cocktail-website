@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="menu-btn">
+      <span (click)="openMenu()">&#x2630;</span>
+    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <span (click)="navigate('/')">Cocktail App</span>
+      </div>
+      <ul class="main-menu" [class.show]="isNavbarActive">
+        <li class="list-items" (click)="navigate('categories')">
+          <span>Categories</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

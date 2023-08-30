@@ -1,0 +1,16 @@
+<div class="categories-wrapper">
+  <div class="categories"></div>
+
+  <div class="tabs-container">
+    <tabs (onTabSelect)="onTabChange($event)" [Data]="data"></tabs>
+  </div>
+
+  <div class="categories-list">
+    <span
+      *ngFor="let category  of categoriesList "
+      (click)="onCategorySelect(category.strCategory||category.strAlcoholic||category.strGlass||'')"
+    >
+      {{category.strCategory||category.strAlcoholic ||category.strGlass}}</span
+    >
+  </div>
+</div>

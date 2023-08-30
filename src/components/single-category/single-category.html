@@ -1,0 +1,16 @@
+<div class="single-category__wrapper">
+  <div
+    (click)="checkDetails(coctail.idDrink)"
+    class="single-category"
+    *ngFor=" let coctail of listOfCoctails"
+  >
+    <span> {{coctail.strDrink}}</span>
+    <div class="single-category__image-container">
+      <img
+        src="{{coctail.strDrinkThumb 
+ }}"
+        alt="coctail-image"
+      />
+    </div>
+  </div>
+</div>

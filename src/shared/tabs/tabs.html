@@ -1,0 +1,9 @@
+<div class="tabs-wrapper">
+  <div
+    [class.selected]="tab.selected"
+    *ngFor="let tab of Data"
+    (click)="handleTabChange(tab)"
+  >
+    <span>{{tab.name}}</span>
+  </div>
+</div>
